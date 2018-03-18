@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/xiang.css">
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <header class="xtou">
+          <div class="xtoun">
+              <a href="index.html">
+                 <i class="iconfont">&#xe682;</i>
+              </a>
+              <div>
+                  <i class="iconfont">&#xe60b;</i>
+              </div>
+          </div>
+          <div class="more">
+              <ul>
+                  <li>
+                      <i class="iconfont">&#xe78c;</i>
+                      <span>收藏</span>
+                  </li>
+                  <li>
+                      <i>A</i>
+                      <span>字号设置</span>
+                  </li>
+                  <li>
+                      <i class="iconfont">&#xe621;</i>
+                      <span>举报</span>
+                  </li>
+                  <li>
+                      <i class="iconfont">&#xe607;</i>
+                      <span>分享</span>
+                  </li>
+              </ul>
+          </div>
+      </header>
+    <section class="neirong">
+          <div class="ntop">
+              <div></div>
+              <h2>面试分享：2018阿里巴巴前端面试题总结</h2>
+              <span>2018-03-03 梦魇小栈 JavaScript</span>
+              <p><a href="">https://blog.ihoey.com/posts/Interview/2018-02-28-alibaba-interview.html</a></p>
+          </div>
+        <div class="nbot">
+            <h3>四种定位的区别</h3>
+            <p>
+                static: 是默认值
+            </p>
+            <p>
+                relative: 相对定位 相对于自身原有位置进行偏移，仍处于标准文档流中
+            </p>
+            <p>
+                absolute: 绝对定位 相对于最近的已定位的祖先元素, 有已定位(指 position不是 static的元素)祖先元素,
+                以最近的祖先元素为参考标准。如果无已定位祖先元素, 以 body元素为偏移参照基准, 完全脱离了标准文档流。
+            </p>
+            <p>
+                fixed: 固定定位的元素会相对于视窗来定位,这意味着即便页面滚动，它还是会停留在相同的位置。
+                一个固定定位元素不会保留它原本在页面应有的空隙
+            </p>
+            <h3>let与var的区别？</h3>
+            <p>let 为 ES6 新添加申明变量的命令，它类似于 var，但是有以下不同：</p>
+            <p>
+                var:声明的变量，其作用域为该语句所在的函数内，且存在变量提升现象<br>
+                let:声明的变量，其作用域为该语句所在的代码块内，不存在变量提升<br>
+                let:不允许重复声明.
+            </p>
+            <h3>为什么 var 可以重复声明？</h3>
+            <p>
+                当我们执行代码时，我们可以简单的理解为新变量分配一块儿内存，命名为 a，并赋值为 2，
+                但在运行的时候编译器与引擎还会进行两项额外的操作：判断变量是否已经声明：
+            </p>
+            <p>
+                首先编译器对代码进行分析拆解，从左至右遇见 var a，则编译器会询问作用域是否已经存在叫 a 的变量了，
+                如果不存在，则招呼作用域声明一个新的变量 a，若已经存在，则忽略 var 继续向下编译，
+                这时 a = 2被编译成可执行的代码供引擎使用。
+                <br>
+                引擎遇见 a=2时同样会询问在当前的作用域下是否有变量 a，若存在，
+                则将 a赋值为 2（由于第一步编译器忽略了重复声明的var，且作用域中已经有 a，
+                所以重复声明会发生值得覆盖而并不会报错）。若不存在，则顺着作用域链向上查找，
+                若最终找到了变量 a则将其赋值 2，若没有找到，则招呼作用域声明一个变量 a并赋值为2。
+            </p>
+            <h3>重排和重绘</h3>
+            <p>部分渲染树（或者整个渲染树）需要重新分析并且节点尺寸需要重新计算。这被称为重排。注意这里至少会有一次重排-初始化页面布局。<br>
+                由于节点的几何属性发生改变或者由于样式发生改变，例如改变元素背景色时，屏幕上的部分内容需要更新。这样的更新被称为重绘。</p>
+            <h3>END</h3>
+        </div>
+    </section>
+    <section class="ts">
+        <div>
+            <img src="img/_20180315165619.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>
+<script>
+     $('.xtoun div i').click(function () {
+         $('.more').slideToggle(150);
+     })
+</script>

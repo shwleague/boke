@@ -1,0 +1,185 @@
+@import "bace.css";
+@font-face {
+    font-family: 'iconfont';  /* project id 590754 */
+    src: url('https://at.alicdn.com/t/font_590754_z4stks9wh3gwg66r.eot');
+    src: url('https://at.alicdn.com/t/font_590754_z4stks9wh3gwg66r.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_590754_z4stks9wh3gwg66r.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_590754_z4stks9wh3gwg66r.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_590754_z4stks9wh3gwg66r.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family: 'iconfont';
+}
+/*//头部*/
+.tou{
+    width: 100%;
+    height: 0.44rem;
+    background: red;
+    padding:0 0.1rem;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+    z-index: 2;
+}
+.tou ul{
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tou ul li{
+   width: auto;
+    height: 100%;
+    line-height: 0.44rem;
+    float: left;
+}
+.tou ul li i{
+    font-style: normal;
+    font-size: 0.2rem;
+    color: #f3f3f3;
+}
+.tou ul li input{
+    padding:0  0.05rem;
+    border-radius: 0.02rem;
+    width: 2.3rem;
+    height: 0.35rem;
+    outline: none;
+    border:none;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+}
+/*daohang*/
+.dh{
+    width: 100%;
+    padding: 0.1rem  0.1rem;
+    box-sizing: border-box;
+    margin-top: 0.44rem;
+    display: none;
+}
+.dh ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.dh ul .col{
+    color: red;
+}
+.dh ul li{
+    color:#333;
+    font-size: 0.14rem;
+}
+/*内容*/
+.nr{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.mt{
+    margin-top: 0.44rem;
+}
+.nr ul{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.44rem;
+    float: left;
+}
+.nr ul li.banner{
+
+}
+.nr ul li.tj{
+    padding: 0.1rem 0.1rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+.nr ul li.tj:last-child{
+    border-bottom: none;
+}
+.tjt{
+    display: flex;
+    align-items: center;
+    padding: 0.05rem 0;
+}
+.tjt span:first-child{
+    font-size: 0.15rem;
+    font-weight: 300;
+}
+.tjt span:last-child{
+    font-size: 0.12rem;
+    font-weight: 100;
+    padding-left: 0.1rem;
+}
+.tx{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.15rem;
+}
+.tx img{
+    border-radius: 50%;
+    display: block;
+    width:100%;
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+}
+.tj p{
+    width: auto;
+    height: auto;
+    font-size: 0.12rem;
+    font-weight: 100;
+}
+.tj h2{
+    padding:0.1rem 0;
+    font-size: 0.15rem;
+}
+.tj p i{
+    font-style: normal;
+    color: red;
+    font-size: 0.18rem;
+}
+.tj p span{
+    font-size: 0.13rem;
+}
+/*tab*/
+.tab{
+    width: 100%;
+    height: 0.44rem;
+    padding:0 0.1rem;
+    box-sizing: border-box;
+    position: fixed;
+     bottom:0;
+    background: #ffffff;
+    box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.3);
+    z-index: 2;
+}
+.tab ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tab ul li{
+    width: auto;
+    height: auto;
+    color: #7a7fa4;
+}
+.tab ul li a{
+    display: block;
+}
+.tab ul li a .iconfont{
+    font-style: normal;
+    font-size: 0.2rem;
+}
+.tab ul li a p{
+    font-size: 0.12rem;
+
+}
+.tab ul .col{
+    color: red;
+}

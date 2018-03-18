@@ -1,0 +1,64 @@
+@import "bace.css";
+@font-face {
+    font-family: 'iconfont';  /* project id 590754 */
+    src: url('https://at.alicdn.com/t/font_590754_1327pjwwnx9a4i.eot');
+    src: url('https://at.alicdn.com/t/font_590754_1327pjwwnx9a4i.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_590754_1327pjwwnx9a4i.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_590754_1327pjwwnx9a4i.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_590754_1327pjwwnx9a4i.svg#iconfont') format('svg');
+}
+body{
+    background: #f3f3f3;
+}
+.iconfont{
+    font-family: 'iconfont';
+}
+.top{
+    width: 100%;
+    height: 0.44rem;
+    box-sizing: border-box;
+    padding: 0  0.1rem;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2) ;
+    line-height: 0.44rem;
+    background: #ffffff;
+    margin-bottom: 0.16rem;
+}
+.top i{
+    font-style: normal;
+    color: #999999;
+    float: left;
+}
+.top div{
+    text-align: center;
+    font-size: 0.16rem;
+}
+/*zhuce*/
+.zc{
+    width: 100%;
+    height: auto;
+    padding: 0  0.1rem;
+    box-sizing: border-box;
+}
+.zc input{
+    width: 100%;
+    padding: 0.15rem 0.1rem;
+    outline: none;
+    border:none;
+    box-sizing: border-box;
+    margin-bottom: 0.1rem;
+}
+.zc input:last-child{
+    background: red;
+    color: #ffffff;
+    border-radius: 2px;
+}
+/*new*/
+.new{
+    padding: 0  0.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.new span,.new span a{
+    font-size: 0.1rem;
+    color: red;
+}
